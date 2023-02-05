@@ -2,10 +2,10 @@ let about = document.querySelector('#about');
 
 let popout = document.querySelector('#popout');
 
-about.addEventListener('mouseover', () => {
-    popout.style.display = "block";
-})
-
-about.addEventListener('mouseleave', () => {
-    popout.style.display = "none";
+about.addEventListener('click', () => {
+    if (popout.style.display == "block"){
+        popout.style.display = "none";
+    } else {
+        popout.style.display = "block"
+    }
 })
